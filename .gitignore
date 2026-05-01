@@ -50,3 +50,22 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# Build Directories
+build/
+Source/pdex.*
+out/
+x64/
+Debug/
+
+# CMake Files
+CMakeFiles/
+CMakeCache.txt
+cmake-build-debug/
+.cache/
+
+#Build pdx
+TodaysPuzzle.pdx/
+TodaysPuzzle.pdx.zip/
+TodaysPuzzle_DEVICE.pdx/
+TodaysPuzzle_DEVICE.pdx.zip/

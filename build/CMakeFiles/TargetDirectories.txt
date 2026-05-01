@@ -1,0 +1,3 @@
+C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC/build/CMakeFiles/TodaysPuzzle_DEVICE.dir
+C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC/build/CMakeFiles/edit_cache.dir
+C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC/build/CMakeFiles/rebuild_cache.dir

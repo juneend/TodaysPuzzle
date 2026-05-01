@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\Source\images\background.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\Source\images\cursor.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\Source\images\doubleBullet.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\Source\images\pieceandboardBG.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\Source\images\plane1.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\Source\images\plane2.png">
+      <Filter>Resources</Filter>
+    </Image>
+    <Image Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\Source\images\player.png">
+      <Filter>Resources</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\Source\images\explosion" />
+    <None Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\Source\images\launch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{49EFB939-3A20-3837-AD8D-BD1592048B3B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{1029EF90-FBE2-3FCE-945C-5CE16B472B94}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

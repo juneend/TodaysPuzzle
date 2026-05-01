@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\build\CMakeFiles\6f8c4bd6c2e69c4b4f6d50b6ad6773ff\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{D4E6F553-2592-3112-859E-0FE8B4F75B1B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

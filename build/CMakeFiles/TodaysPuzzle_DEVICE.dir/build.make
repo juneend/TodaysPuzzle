@@ -92,10 +92,24 @@ CMakeFiles\TodaysPuzzle_DEVICE.dir\game.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/TodaysPuzzle_DEVICE.dir/game.c.s"
 	C:\PROGRA~2\Arm\GNUTOO~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c" -o CMakeFiles\TodaysPuzzle_DEVICE.dir\game.c.s
 
+CMakeFiles\TodaysPuzzle_DEVICE.dir\grid.c.obj: CMakeFiles\TodaysPuzzle_DEVICE.dir\flags.make
+CMakeFiles\TodaysPuzzle_DEVICE.dir\grid.c.obj: "C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\grid.c"
+CMakeFiles\TodaysPuzzle_DEVICE.dir\grid.c.obj: CMakeFiles\TodaysPuzzle_DEVICE.dir\compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/TodaysPuzzle_DEVICE.dir/grid.c.obj"
+	C:\PROGRA~2\Arm\GNUTOO~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\TodaysPuzzle_DEVICE.dir\grid.c.obj -MF CMakeFiles\TodaysPuzzle_DEVICE.dir\grid.c.obj.d -o CMakeFiles\TodaysPuzzle_DEVICE.dir\grid.c.obj -c "C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\grid.c"
+
+CMakeFiles\TodaysPuzzle_DEVICE.dir\grid.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/TodaysPuzzle_DEVICE.dir/grid.c.i"
+	C:\PROGRA~2\Arm\GNUTOO~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E "C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\grid.c" > CMakeFiles\TodaysPuzzle_DEVICE.dir\grid.c.i
+
+CMakeFiles\TodaysPuzzle_DEVICE.dir\grid.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/TodaysPuzzle_DEVICE.dir/grid.c.s"
+	C:\PROGRA~2\Arm\GNUTOO~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S "C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\grid.c" -o CMakeFiles\TodaysPuzzle_DEVICE.dir\grid.c.s
+
 CMakeFiles\TodaysPuzzle_DEVICE.dir\C_\Users\thebr\Documents\PlaydateSDK\C_API\buildsupport\setup.c.obj: CMakeFiles\TodaysPuzzle_DEVICE.dir\flags.make
 CMakeFiles\TodaysPuzzle_DEVICE.dir\C_\Users\thebr\Documents\PlaydateSDK\C_API\buildsupport\setup.c.obj: C:\Users\thebr\Documents\PlaydateSDK\C_API\buildsupport\setup.c
 CMakeFiles\TodaysPuzzle_DEVICE.dir\C_\Users\thebr\Documents\PlaydateSDK\C_API\buildsupport\setup.c.obj: CMakeFiles\TodaysPuzzle_DEVICE.dir\compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/TodaysPuzzle_DEVICE.dir/C_/Users/thebr/Documents/PlaydateSDK/C_API/buildsupport/setup.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/TodaysPuzzle_DEVICE.dir/C_/Users/thebr/Documents/PlaydateSDK/C_API/buildsupport/setup.c.obj"
 	C:\PROGRA~2\Arm\GNUTOO~1\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles\TodaysPuzzle_DEVICE.dir\C_\Users\thebr\Documents\PlaydateSDK\C_API\buildsupport\setup.c.obj -MF CMakeFiles\TodaysPuzzle_DEVICE.dir\C_\Users\thebr\Documents\PlaydateSDK\C_API\buildsupport\setup.c.obj.d -o CMakeFiles\TodaysPuzzle_DEVICE.dir\C_\Users\thebr\Documents\PlaydateSDK\C_API\buildsupport\setup.c.obj -c C:\Users\thebr\Documents\PlaydateSDK\C_API\buildsupport\setup.c
 
 CMakeFiles\TodaysPuzzle_DEVICE.dir\C_\Users\thebr\Documents\PlaydateSDK\C_API\buildsupport\setup.c.i: cmake_force
@@ -110,6 +124,7 @@ CMakeFiles\TodaysPuzzle_DEVICE.dir\C_\Users\thebr\Documents\PlaydateSDK\C_API\bu
 TodaysPuzzle_DEVICE_OBJECTS = \
 "CMakeFiles\TodaysPuzzle_DEVICE.dir\main.c.obj" \
 "CMakeFiles\TodaysPuzzle_DEVICE.dir\game.c.obj" \
+"CMakeFiles\TodaysPuzzle_DEVICE.dir\grid.c.obj" \
 "CMakeFiles\TodaysPuzzle_DEVICE.dir\C_\Users\thebr\Documents\PlaydateSDK\C_API\buildsupport\setup.c.obj"
 
 # External object files for target TodaysPuzzle_DEVICE
@@ -117,9 +132,10 @@ TodaysPuzzle_DEVICE_EXTERNAL_OBJECTS =
 
 TodaysPuzzle_DEVICE.elf: CMakeFiles\TodaysPuzzle_DEVICE.dir\main.c.obj
 TodaysPuzzle_DEVICE.elf: CMakeFiles\TodaysPuzzle_DEVICE.dir\game.c.obj
+TodaysPuzzle_DEVICE.elf: CMakeFiles\TodaysPuzzle_DEVICE.dir\grid.c.obj
 TodaysPuzzle_DEVICE.elf: CMakeFiles\TodaysPuzzle_DEVICE.dir\C_\Users\thebr\Documents\PlaydateSDK\C_API\buildsupport\setup.c.obj
 TodaysPuzzle_DEVICE.elf: CMakeFiles\TodaysPuzzle_DEVICE.dir\build.make
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable TodaysPuzzle_DEVICE.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable TodaysPuzzle_DEVICE.elf"
 	echo >nul && "C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC"
 	C:\PROGRA~2\Arm\GNUTOO~1\bin\AR19DD~1.EXE -nostartfiles -mthumb -mcpu=cortex-m7 -mfloat-abi=hard -mfpu=fpv5-sp-d16 -D__FPU_USED=1 -TC:/Users/thebr/Documents/PlaydateSDK/C_API/buildsupport/link_map.ld -Wl,-Map=game.map,--cref,--gc-sections,--no-warn-mismatch,--emit-relocs --entry eventHandlerShim $(TodaysPuzzle_DEVICE_OBJECTS) $(TodaysPuzzle_DEVICE_EXTERNAL_OBJECTS) -o TodaysPuzzle_DEVICE.elf
 	echo >nul && "C:\Program Files (x86)\Arm\GNU Toolchain mingw-w64-i686-arm-none-eabi\bin\arm-none-eabi-strip.exe" --strip-unneeded -R .comment -g TodaysPuzzle_DEVICE.elf -o "C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC/Source/pdex.elf"

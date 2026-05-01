@@ -9,11 +9,30 @@ C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v180\M
 C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v180\Microsoft.CppCommon.targets(254,5): warning MSB8065: Custom build for item "C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\CMakeLists.txt" succeeded, but specified output "c:\users\thebr\documents\playdate projects\todayspuzzleinc\build\cmakefiles\generate.stamp" has not been created. This may cause incremental build to work incorrectly.
   Microsoft (R) C/C++ Optimizing Compiler Version 19.51.36241 for x64
   Copyright (C) Microsoft Corporation.  All rights reserved.
-  cl /c /IC:\Users\thebr\Documents\PlaydateSDK\C_API /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _WINDLL /D _MBCS /D WIN32 /D _WINDOWS /D TARGET_SIMULATOR=1 /D _WINDLL=1 /D TARGET_EXTENSION=1 /D "CMAKE_INTDIR=\"Debug\"" /D TodaysPuzzle_EXPORTS /RTC1 /MDd /std:c11 /Fo"TodaysPuzzle.dir\Debug\\" /Fd"TodaysPuzzle.dir\Debug\vc145.pdb" /external:W3 /TC /errorReport:prompt "C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c"
+  cl /c /IC:\Users\thebr\Documents\PlaydateSDK\C_API /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _WINDLL /D _MBCS /D WIN32 /D _WINDOWS /D TARGET_SIMULATOR=1 /D _WINDLL=1 /D TARGET_EXTENSION=1 /D "CMAKE_INTDIR=\"Debug\"" /D TodaysPuzzle_EXPORTS /RTC1 /MDd /std:c11 /Fo"TodaysPuzzle.dir\Debug\\" /Fd"TodaysPuzzle.dir\Debug\vc145.pdb" /external:W3 /TC /errorReport:prompt ..\grid.c "C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c" "C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\main.c"
+  grid.c
   game.c
-C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(441,31): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
-C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(441,34): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
-C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(445,32): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
-C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(445,41): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(67,37): warning C4244: 'function': conversion from 'const int' to 'float', possible loss of data
+C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(67,46): warning C4244: 'function': conversion from 'const int' to 'float', possible loss of data
+C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(118,26): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(118,34): warning C4244: 'function': conversion from 'float' to 'int', possible loss of data
+C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(119,25): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(119,29): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(135,31): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(135,34): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(166,31): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(166,34): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(170,32): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c(170,41): warning C4244: 'function': conversion from 'int' to 'float', possible loss of data
+  main.c
+  Generating Code...
+main.obj : error LNK2005: pd already defined in grid.obj
+game.obj : error LNK2005: pd already defined in grid.obj
      Creating library C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC/build/Debug/TodaysPuzzle.lib and object C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC/build/Debug/TodaysPuzzle.exp
-  TodaysPuzzle.vcxproj -> C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\build\Debug\TodaysPuzzle.dll
+grid.obj : error LNK2001: unresolved external symbol sprites
+game.obj : error LNK2001: unresolved external symbol sprites
+grid.obj : error LNK2001: unresolved external symbol sys
+game.obj : error LNK2001: unresolved external symbol sys
+game.obj : error LNK2001: unresolved external symbol graphics
+game.obj : error LNK2001: unresolved external symbol sound
+C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\build\Debug\TodaysPuzzle.dll : fatal error LNK1120: 4 unresolved externals

@@ -64,23 +64,32 @@
       <AdditionalIncludeDirectories>C:\Users\thebr\Documents\PlaydateSDK\C_API;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
-      <BufferSecurityCheck></BufferSecurityCheck>
-      <CallingConvention></CallingConvention>
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <CallingConvention>
+      </CallingConvention>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>
       </ExceptionHandling>
-      <FloatingPointModel></FloatingPointModel>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard_C>stdc11</LanguageStandard_C>
-      <MinimalRebuild></MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <Optimization>Disabled</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
-      <SuppressStartupBanner></SuppressStartupBanner>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;TARGET_SIMULATOR=1;_WINDLL=1;TARGET_EXTENSION=1;CMAKE_INTDIR="Debug";TodaysPuzzle_EXPORTS</PreprocessorDefinitions>
@@ -100,7 +109,8 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PreBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC"
 if %errorlevel% neq 0 goto :cmEnd
@@ -112,7 +122,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Message>	</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy "C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC/build/Debug/TodaysPuzzle.dll" "C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC/Source/pdex.dll"
 if %errorlevel% neq 0 goto :cmEnd
@@ -136,14 +147,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-      <DataExecutionPrevention></DataExecutionPrevention>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImageHasSafeExceptionHandlers>
+      </ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC/build/Debug/TodaysPuzzle.lib</ImportLibrary>
-      <LinkErrorReporting></LinkErrorReporting>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
       <ProgramDataBaseFile>C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC/build/Debug/TodaysPuzzle.pdb</ProgramDataBaseFile>
-      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -155,22 +170,31 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalIncludeDirectories>C:\Users\thebr\Documents\PlaydateSDK\C_API;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
-      <BufferSecurityCheck></BufferSecurityCheck>
-      <CallingConvention></CallingConvention>
+      <BufferSecurityCheck>
+      </BufferSecurityCheck>
+      <CallingConvention>
+      </CallingConvention>
       <ExceptionHandling>
       </ExceptionHandling>
-      <FloatingPointModel></FloatingPointModel>
-      <ForceConformanceInForLoopScope></ForceConformanceInForLoopScope>
+      <FloatingPointModel>
+      </FloatingPointModel>
+      <ForceConformanceInForLoopScope>
+      </ForceConformanceInForLoopScope>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <LanguageStandard_C>stdc11</LanguageStandard_C>
-      <MinimalRebuild></MinimalRebuild>
+      <MinimalRebuild>
+      </MinimalRebuild>
       <Optimization>MaxSpeed</Optimization>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
-      <RemoveUnreferencedCodeData></RemoveUnreferencedCodeData>
+      <RemoveUnreferencedCodeData>
+      </RemoveUnreferencedCodeData>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <SupportJustMyCode></SupportJustMyCode>
-      <SuppressStartupBanner></SuppressStartupBanner>
-      <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
+      <SupportJustMyCode>
+      </SupportJustMyCode>
+      <SuppressStartupBanner>
+      </SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>
+      </TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TARGET_SIMULATOR=1;_WINDLL=1;TARGET_EXTENSION=1;CMAKE_INTDIR="Release";TodaysPuzzle_EXPORTS</PreprocessorDefinitions>
@@ -192,7 +216,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PreBuildEvent>
-      <Message></Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E make_directory "C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC"
 if %errorlevel% neq 0 goto :cmEnd
@@ -204,7 +229,8 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd</Command>
     </PreBuildEvent>
     <PostBuildEvent>
-      <Message>	</Message>
+      <Message>
+      </Message>
       <Command>setlocal
 "C:\Program Files\CMake\bin\cmake.exe" -E copy "C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC/build/Release/TodaysPuzzle.dll" "C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC/Source/pdex.dll"
 if %errorlevel% neq 0 goto :cmEnd
@@ -228,14 +254,18 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
-      <DataExecutionPrevention></DataExecutionPrevention>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImageHasSafeExceptionHandlers></ImageHasSafeExceptionHandlers>
+      <ImageHasSafeExceptionHandlers>
+      </ImageHasSafeExceptionHandlers>
       <ImportLibrary>C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC/build/Release/TodaysPuzzle.lib</ImportLibrary>
-      <LinkErrorReporting></LinkErrorReporting>
+      <LinkErrorReporting>
+      </LinkErrorReporting>
       <ProgramDataBaseFile>C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC/build/Release/TodaysPuzzle.pdb</ProgramDataBaseFile>
-      <RandomizedBaseAddress></RandomizedBaseAddress>
+      <RandomizedBaseAddress>
+      </RandomizedBaseAddress>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -274,6 +304,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\grid.c" />
     <ClCompile Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\main.c" />
     <ClCompile Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c" />
     <Image Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\Source\images\background.png">
@@ -295,7 +326,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <Image Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\Source\images\player.png">
     </Image>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ClInclude Include="..\grid.h" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\build\ZERO_CHECK.vcxproj">
       <Project>{A752BC5C-B120-30B9-9045-06D51CC3D2EE}</Project>

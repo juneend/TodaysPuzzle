@@ -7,6 +7,9 @@
     <ClCompile Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\game.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\grid.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\CMakeLists.txt" />
@@ -45,5 +48,13 @@
     <Filter Include="Source Files">
       <UniqueIdentifier>{1029EF90-FBE2-3FCE-945C-5CE16B472B94}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{e37f64d6-29c0-43a7-bb65-78209179e253}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

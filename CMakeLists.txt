@@ -30,14 +30,27 @@ set(PLAYDATE_GAME_DEVICE TodaysPuzzle_DEVICE)
 
 project(${PLAYDATE_GAME_NAME} C ASM)
 
+
+set(SOURCE_FILES
+	main.c
+	game.c
+	grid.c
+)
+
+set(HEADER_FILES
+	game.h
+	grid.h
+)
+	
+
 file(GLOB IMAGES
 	"Source/images/*"
 )
 
 if (TOOLCHAIN STREQUAL "armgcc")
-	add_executable(${PLAYDATE_GAME_DEVICE} main.c game.c)
+	add_executable(${PLAYDATE_GAME_DEVICE} ${SOURCE_FILES} ${HEADER_FILES})
 else()
-	add_library(${PLAYDATE_GAME_NAME} SHARED main.c game.c ${IMAGES})
+	add_library(${PLAYDATE_GAME_NAME} SHARED ${SOURCE_FILES} ${HEADER_FILES} ${IMAGES})
 endif()
 
 include(${SDK}/C_API/buildsupport/playdate_game.cmake)

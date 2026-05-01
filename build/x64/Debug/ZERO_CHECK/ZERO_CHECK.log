@@ -2,7 +2,7 @@
   CMake is re-running because generate.stamp.list is missing.
   -- arm.cmake loaded
   -- SDK Path: C:/Users/thebr/Documents/PlaydateSDK
-  -- Configuring done (0.1s)
+  -- Configuring done (0.0s)
   -- Generating done (0.0s)
   -- Build files have been written to: C:/Users/thebr/Documents/Playdate Projects/TodaysPuzzleINC/build
 C:\Program Files\Microsoft Visual Studio\18\Insiders\MSBuild\Microsoft\VC\v180\Microsoft.CppCommon.targets(237,5): warning MSB8064: Custom build for item "C:\Users\thebr\Documents\Playdate Projects\TodaysPuzzleINC\build\CMakeFiles\6f8c4bd6c2e69c4b4f6d50b6ad6773ff\generate.stamp.rule" succeeded, but specified dependency "c:\users\thebr\documents\playdate projects\todayspuzzleinc\build\cmakefiles\6f8c4bd6c2e69c4b4f6d50b6ad6773ff\generate.stamp.rule" does not exist. This may cause incremental build to work incorrectly.

@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/TodaysPuzzle_DEVICE.dir/C_/Users/thebr/Documents/PlaydateSDK/C_API/buildsupport/setup.c.obj.d"
   "CMakeFiles/TodaysPuzzle_DEVICE.dir/game.c.obj"
   "CMakeFiles/TodaysPuzzle_DEVICE.dir/game.c.obj.d"
+  "CMakeFiles/TodaysPuzzle_DEVICE.dir/grid.c.obj"
+  "CMakeFiles/TodaysPuzzle_DEVICE.dir/grid.c.obj.d"
   "CMakeFiles/TodaysPuzzle_DEVICE.dir/main.c.obj"
   "CMakeFiles/TodaysPuzzle_DEVICE.dir/main.c.obj.d"
   "TodaysPuzzle_DEVICE.elf"

@@ -169,6 +169,30 @@ game.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TodaysPuzzle_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TodaysPuzzle_DEVICE.dir\game.c.s
 .PHONY : game.c.s
 
+grid.obj: grid.c.obj
+.PHONY : grid.obj
+
+# target to build an object file
+grid.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TodaysPuzzle_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TodaysPuzzle_DEVICE.dir\grid.c.obj
+.PHONY : grid.c.obj
+
+grid.i: grid.c.i
+.PHONY : grid.i
+
+# target to preprocess a source file
+grid.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TodaysPuzzle_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TodaysPuzzle_DEVICE.dir\grid.c.i
+.PHONY : grid.c.i
+
+grid.s: grid.c.s
+.PHONY : grid.s
+
+# target to generate assembly for a file
+grid.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TodaysPuzzle_DEVICE.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\TodaysPuzzle_DEVICE.dir\grid.c.s
+.PHONY : grid.c.s
+
 main.obj: main.c.obj
 .PHONY : main.obj
 
@@ -208,6 +232,9 @@ help:
 	@echo ... game.obj
 	@echo ... game.i
 	@echo ... game.s
+	@echo ... grid.obj
+	@echo ... grid.i
+	@echo ... grid.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

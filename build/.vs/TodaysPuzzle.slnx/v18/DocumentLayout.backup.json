@@ -3,19 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\build\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA68D2-EECD-30C2-94F2-796851D365FE}|TodaysPuzzle.vcxproj|C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\grid.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C1DA68D2-EECD-30C2-94F2-796851D365FE}|TodaysPuzzle.vcxproj|C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\game.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1DA68D2-EECD-30C2-94F2-796851D365FE}|TodaysPuzzle.vcxproj|C:\\USERS\\THEBR\\DOCUMENTS\\PLAYDATE PROJECTS\\TODAYSPUZZLEINC\\GAME.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{C1DA68D2-EECD-30C2-94F2-796851D365FE}|TodaysPuzzle.vcxproj|C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\grid.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C1DA68D2-EECD-30C2-94F2-796851D365FE}|TodaysPuzzle.vcxproj|C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\grid.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C1DA68D2-EECD-30C2-94F2-796851D365FE}|TodaysPuzzle.vcxproj|C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1DA68D2-EECD-30C2-94F2-796851D365FE}|TodaysPuzzle.vcxproj|C:\\USERS\\THEBR\\DOCUMENTS\\PLAYDATE PROJECTS\\TODAYSPUZZLEINC\\GAME.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,69 +25,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "grid.h",
               "DocumentMoniker": "C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\grid.h",
               "RelativeDocumentMoniker": "..\\grid.h",
               "ToolTip": "C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\grid.h",
               "RelativeToolTip": "..\\grid.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwBgAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-05-01T19:28:56.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "grid.c",
               "DocumentMoniker": "C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\grid.c",
               "RelativeDocumentMoniker": "..\\grid.c",
-              "ToolTip": "C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\grid.c \u2B24",
-              "RelativeToolTip": "..\\grid.c \u2B24",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAACAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\grid.c",
+              "RelativeToolTip": "..\\grid.c",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-05-01T19:28:55.167Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "game.c",
               "DocumentMoniker": "C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\game.c",
               "RelativeDocumentMoniker": "..\\game.c",
               "ToolTip": "C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\game.c",
               "RelativeToolTip": "..\\game.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAqwE8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-04-30T03:00:44.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "game.h",
               "DocumentMoniker": "C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\game.h",
               "RelativeDocumentMoniker": "..\\game.h",
-              "ToolTip": "C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\game.h \u2B24",
-              "RelativeToolTip": "..\\game.h \u2B24",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAgwBIAAAAAAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\game.h",
+              "RelativeToolTip": "..\\game.h",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-05-01T19:24:32.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "main.c",
               "DocumentMoniker": "C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\main.c",
               "RelativeDocumentMoniker": "..\\main.c",
               "ToolTip": "C:\\Users\\thebr\\Documents\\Playdate Projects\\TodaysPuzzleINC\\main.c",
               "RelativeToolTip": "..\\main.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2026-04-30T03:00:45.46Z",
               "EditorCaption": ""

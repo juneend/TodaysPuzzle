@@ -8,6 +8,7 @@
 #define grid_h
 
 #include <stdio.h>
+#include <stdbool.h>
 
 #ifndef PD_API_INCLUDED 
 #include "pd_api.h"  
@@ -18,11 +19,15 @@
 typedef struct Cell {
 	int ID;
 	bool isActive;
-	LCDSprite* sprite;
+	//LCDSprite* sprite;
 }Cell;
 
+void CellPlayerCollision(int ID);
+
 void GridInit();
-void GridUpdate();
+void GridUpdate(bool playerUpdate);
 void GridDestroy();
+
+
 
 #endif 

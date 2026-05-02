@@ -9,28 +9,46 @@
 
 #include "game.h"
 
-static Cell* cellptr;
+static LCDSprite* cell;
+
+
+void CellPlayerCollision(int ID)
+{
+	Cell* data = sprites->getUserdata(cell);
+	data->isActive = true;
+	sys->logToConsole("cell active!");
+}
 
 void GridInit()
 {
+	//create cell data
 	Cell* newCell = sys->realloc(NULL, sizeof(Cell));
 
 	newCell->ID = 0;
 	newCell->isActive = false;
 
+	//create sprite and set the data to this cell
 	LCDSprite* cellSpr = CreateSpriteFromImage(50, 50, "images/cells/jan", 0, 0);
-	newCell->sprite = cellSpr;
+	sprites->setTag(cellSpr, TAG_CELL);
+	sprites->setUserdata(cellSpr, newCell);
 
-	cellptr = newCell;
+	cell = cellSpr;
 
 }
 
-void GridUpdate()
-{}
+
+void GridUpdate(bool playerUpdate)
+{
+	Cell* data = sprites->getUserdata(cell);
+	data->isActive = false;
+	sys->logToConsole("cell inactive!");
+}
 
 void GridDestroy()
 {
-	sprites->freeSprite(cellptr->sprite);
-	sys->realloc(cellptr, 0);
+	//free cell data
+	sys->realloc(sprites->getUserdata(cell), 0);
+	//free sprite
+	sprites->freeSprite(cell);
 	
 }

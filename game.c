@@ -7,24 +7,29 @@
 #include <stdlib.h>
 #include "game.h"
 
-
 static const int screenW = 400, screenH = 240;
+
+const PlaydateAPI* pd = NULL;
+const struct playdate_graphics* graphics = NULL;
+const struct playdate_sound* sound = NULL;
+const struct playdate_sprite* sprites = NULL;
+const struct playdate_sys* sys = NULL;
 
 
 //// game state
 
 //player
-LCDSprite *player = NULL;
+LCDSprite* player = NULL;
 int playerSize = 0;
 
 
 // background
-LCDSprite *bgSprite = NULL;
-LCDBitmap *bgImage = NULL;
-
-// cached images
+LCDSprite* bgSprite = NULL;
+LCDBitmap* bgImage = NULL;
 
 
+
+//--------public util functions ---------
 void setPDPtr(PlaydateAPI* p) {
 	pd = p;
 	graphics = pd->graphics;
@@ -34,14 +39,51 @@ void setPDPtr(PlaydateAPI* p) {
 }
 
 
-LCDBitmap *loadImageAtPath(const char *path)
+LCDBitmap* loadImageAtPath(const char* path)
 {
-	const char *outErr = NULL;
-	LCDBitmap *img = pd->graphics->loadBitmap(path, &outErr);
-	if ( outErr != NULL ) {
+	const char* outErr = NULL;
+	LCDBitmap* img = pd->graphics->loadBitmap(path, &outErr);
+	if (outErr != NULL) {
 		pd->system->logToConsole("Error loading image at path '%s': %s", path, outErr);
 	}
 	return img;
+}
+
+LCDSprite* CreateSpriteFromImage(int posX, int posY, const char* path, float centerX, float centerY)
+{
+	//alloc sprite
+	LCDSprite* newSpr = pd->sprite->newSprite();
+
+	//set the image
+	LCDBitmap* sprImage = loadImageAtPath(path);
+	int w, h;
+	pd->graphics->getBitmapData(sprImage, &w, &h, NULL, NULL, NULL);
+	pd->sprite->setImage(newSpr, sprImage, kBitmapUnflipped);
+
+	//make the bounding box
+	PDRect cr = PDRectMake(0, 0, w, h);
+	sprites->setBounds(newSpr, cr);
+	pd->sprite->setCollideRect(newSpr, cr);
+	sprites->setCenter(newSpr, centerX, centerY);
+
+	//move to position
+	pd->sprite->moveTo(newSpr, posX, posY);
+
+	//add sprite to scene
+	pd->sprite->addSprite(newSpr);
+
+	return newSpr;
+}
+
+//returns true if x, y is inside the rect.
+bool PointRectCollision(const PDRect rect, int x, int y)
+{
+	//this assumes that rect x, y are at its top left
+	//TODO: maybe don't?
+	return (x > rect.x && //left
+			x < rect.x + rect.width && //right
+			y > rect.y && //below the top
+			y < rect.y + rect.height); //above the bottom
 }
 
 
@@ -75,12 +117,45 @@ static void setupBackground(void)
 
 static SpriteCollisionResponseType playerCollisionResponse(LCDSprite* sprite, LCDSprite* other)
 {
+	//is the player colliding with a cell?
+	if (sprites->getTag(other) & TAG_CELL)
+	{
+		PDRect cellrect = sprites->getBounds(other);
+		float x=0.0f, y=0.0f;
+		sprites->getPosition(sprite, &x, &y);
+
+		//if the top left point is inside the rect
+		if (PointRectCollision(cellrect, x, y))
+		{
+			//get cell metadata
+			Cell* data = (Cell*)sprites->getUserdata(other);
+
+			CellPlayerCollision(data->ID);
+
+		}
+
+	}
+
+
 	return kCollisionTypeOverlap;
+
+	//kSpriteCollisionTypeSlide: Use for collisions that should slide over other objects, 
+	// like Super Mario does over a platform or the ground.
+	//
+	//kSpriteCollisionTypeFreeze : Use for collisions where the sprite should stop moving 
+	// as soon as it collides with other, such as an arrow hitting a wall.
+	//
+	//kSpriteCollisionTypeOverlap : Use for collisions in which you want to know about the 
+	// collision but it should not impact the movement of the sprite, such as when collecting a coin.
+	//
+	//kSpriteCollisionTypeBounce : Use when the sprite should move away from other, 
+	// like the ball in Pong or Arkanoid.
+
 }
 
 //player nextposition is at the sprite's top left
 //returns true if the next position is within bounds, otherwise false.
-bool playerBoundsCheck(int nextX, int nextY)
+static bool playerBoundsCheck(int nextX, int nextY)
 {
 	if (nextX < 0 || //left
 		nextX > screenW || //right
@@ -116,34 +191,14 @@ static void updatePlayer(LCDSprite* s)
 	pd->sprite->getPosition(s, &x, &y);
 
 	if (playerBoundsCheck(x + dx, y + dy))
-		pd->sprite->moveBy(s, dx, dy);
+	{
+		SpriteCollisionInfo* cInfo = pd->sprite->moveWithCollisions(s, x + dx, y + dy, NULL, NULL, NULL);
+		sys->realloc(cInfo, 0);
+	}
 
 }
 
-LCDSprite* CreateSpriteFromImage(int posX, int posY, const char* path, float centerX, float centerY)
-{
-	//alloc sprite
-	LCDSprite* newSpr = pd->sprite->newSprite();
 
-	//set the image
-	LCDBitmap* sprImage = loadImageAtPath(path);
-	int w, h;
-	pd->graphics->getBitmapData(sprImage, &w, &h, NULL, NULL, NULL);
-	pd->sprite->setImage(newSpr, sprImage, kBitmapUnflipped);
-
-	//make the bounding box
-	PDRect cr = PDRectMake(0, 0, w, h);
-	pd->sprite->setCollideRect(newSpr, cr);
-	sprites->setCenter(newSpr, centerX, centerY);
-
-	//move to position
-	pd->sprite->moveTo(newSpr, centerX, centerY);
-
-	//add sprite to scene
-	pd->sprite->addSprite(newSpr);
-
-	return newSpr;
-}
 
 static LCDSprite* createPlayer(int centerX, int centerY)
 {
@@ -163,13 +218,16 @@ static LCDSprite* createPlayer(int centerX, int centerY)
 
 	pd->sprite->setImage(cursorSpr, sprImage, kBitmapUnflipped);
 
-	PDRect cr = PDRectMake(5, 5, w, h);
+	PDRect cr = PDRectMake(0, 0, w, h);
 	pd->sprite->setCollideRect(cursorSpr, cr);
 	pd->sprite->setCollisionResponseFunction(cursorSpr, playerCollisionResponse);
 
 	pd->sprite->moveTo(cursorSpr, centerX, centerY);
 
 	pd->sprite->setZIndex(cursorSpr, 1000);
+
+	sprites->setTag(cursorSpr, TAG_PLAYER);
+
 	pd->sprite->addSprite(cursorSpr);
 
 	//pd->sprite->setTag(plane, kPlayer);
@@ -180,14 +238,15 @@ static LCDSprite* createPlayer(int centerX, int centerY)
 }
 
 
-// game initialization
+// ----------------- game system ---------------
 void setupGame(void)
 {
 	srand(pd->system->getSecondsSinceEpoch(NULL));
 
 	setupBackground();
 	player = createPlayer(200, 180);
-	//preloadImages();
+	
+	GridInit();
 }
 
 // cranking the crank changes the maximum number of enemy planes allowed
@@ -227,6 +286,8 @@ int update(void* ud)
 
 	/*spawnEnemyIfNeeded();
 	spawnBackgroundPlaneIfNeeded();*/
+
+	GridUpdate(true);
 
 	pd->sprite->updateAndDrawSprites();
 	

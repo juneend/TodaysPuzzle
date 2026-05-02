@@ -27,6 +27,11 @@ extern const struct playdate_sound* sound;
 extern const struct playdate_sprite* sprites;
 extern const struct playdate_sys* sys;
 
+#define TAG_PLAYER (1 << 0)
+#define TAG_CELL (1 << 0)
+
+LCDSprite* player;
+
 //utility functions
 //TODO: move these to their own util file maybe?
 LCDBitmap* loadImageAtPath(const char* path);
